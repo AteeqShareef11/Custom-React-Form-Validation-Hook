@@ -30,12 +30,10 @@ const validationRules = {
 };
 
 const Form = () => {
-
     const { values, errors, handleOnChange, validateAllFields, setFormValues } = useForm(
         initialValues,
         validationRules
     );
-
     const handleSubmit = (e) => {
         e.preventDefault();
         if (validateAllFields()) {
